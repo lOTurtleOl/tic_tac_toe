@@ -1,11 +1,21 @@
 divs = $('.ticTacToe');
 console.log(divs);
 
+$('#reset').on('click', () => {
+    resetGame();
+})
+
 let board = Array(9).fill(null);
     
 class playGame {
     constructor() {
 
+    }
+
+    intro() {
+        alert(`Welcome to tic-tac-toe! The rules are as follows:`)
+        alert(`\n\nWell known, obviously.\n\n`)
+        alert(`X moves first, and have fun!`)
     }
 
     takeTurns(xTurn) {
@@ -36,6 +46,10 @@ class playGame {
             
     } // end of takeTurns()
 
+    resetGame() {
+        board = Array(9).fill(null);
+    }
+
 } // end of playGame class
 
 // array of sub-arrays to hold possible winning combinations
@@ -60,6 +74,7 @@ function checkWinCondition(board) {
 }
 
 let game = new playGame();
+game.intro();
 game.takeTurns(true);
 
 
