@@ -1,0 +1,18 @@
+{
+  "name": "tic_tac_toe",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000t\u0000i\u0000c\u0000_\u0000t\u0000a\u0000c\u0000_\u0000t\u0000o\u0000e\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ajax": "^0.0.4",
+    "bootstrap": "^5.3.3",
+    "chai": "^4.3.10",
+    "jquery": "^3.7.1",
+    "mocha": "^10.2.0"
+  }
+}
