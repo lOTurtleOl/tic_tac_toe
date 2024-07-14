@@ -46,10 +46,6 @@ class playGame {
             
     } // end of takeTurns()
 
-    resetGame() {
-        board = Array(9).fill(null);
-    }
-
 } // end of playGame class
 
 // array of sub-arrays to hold possible winning combinations
@@ -71,6 +67,11 @@ function checkWinCondition(board) {
             alert(`${board[a]} has won the game! Congratulations!`)
         }        
     }
+}
+
+function resetGame() {
+    board = Array(9).fill(null);
+    $('.ticTacToe').text('');
 }
 
 let game = new playGame();
